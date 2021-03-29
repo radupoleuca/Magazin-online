@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style_index.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav> 
+                <a href = "#">Autentificare</a> | 
+                <a href = "#">Cosul tau</a> | 
+                <a href = "#">Contact</a>   
+            </nav>
+            <div id="title"><h2>Meniul zilei</h2></div>
+            <div id="btn-container">
+                <button type="button" class="filter-btn" data-id="all">all</button>
+                <button type="button" class="filter-btn" data-id="breakfast">breakfast</button>
+                <button type="button" class="filter-btn" data-id="lunch">lunch</button>
+                <button type="button" class="filter-btn" data-id="shakes">shakes</button>
+            </div>
+            <div class="dropdown">
+                <form> 
+                    <div class="multipleSelection"> 
+                        <div class="selectBox" onclick="showCheckboxes()"> 
+                            <select> 
+                                <option>Filtreaza rezultatele</option> 
+                            </select> 
+                            <div class="overSelect"></div> 
+                        </div> 
+              
+                        <div id="checkBoxes"> 
+                            <label for="first"> 
+                                <input type="checkbox" id="first" onclick="validate('first')" /> 
+                                de post 
+                            </label> 
+                              
+                            <label for="second"> 
+                                <input type="checkbox" id="second" onclick="validate('second')" /> 
+                                fara zahar 
+                            </label> 
+                            <label for="third"> 
+                                <input type="checkbox" id="third" onclick="validate('third')"/> 
+                                fara grasimi 
+                            </label> 
+                            <label for="fourth"> 
+                                <input type="checkbox" id="fourth" onclick="validate('fourth')"/> 
+                                fara carne 
+                            </label> 
+                        </div> 
+                    </div> 
+                </form>
+            </div>
+        </header>
+
+        <section class="container">
+            <arcticle class="item">
+                <div class="item-info"></div>
+                    <img src="./images/item-1.jpeg" alt="imagine produs" class="imagine" />
+                    <header>
+                        <h4>item 1</h4>
+                        <h4 class="price">pret</h4>
+                    </header>
+                    <p class="descriere">Lorem ipsum dolor sit amet.</p>
+                    <div class="details"><button class="btn modal-btn">ingrediente</button</div>
+                    <div class="details"><button>cumpara</button</div>
+                </div>
+            </arcticle>
+        </section>
+
+        <footer>
+
+        </footer>
+
+        <div class="modal-container">
+           <h3 class="modal-text">modal content</h3>
+           <button class="close-btn">x</button>
+        </div>
+    </body>
+    <script type="text/javascript" src="js_index.js"></script>
+</html>
